@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\classes\\vehiclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\classes\\vehiclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\classes\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\classes\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\classes\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\classes\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\classes\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\classes\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|c:\\users\\furkan bulbul\\desktop\\assignment\\rentvehicle\\rentvehicle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{934485D2-2760-432B-890E-B8575FBB4D68}|RentVehicle\\RentVehicle.csproj|solutionrelative:rentvehicle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Car.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Classes\\Car.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Car.cs",
+              "RelativeToolTip": "RentVehicle\\Classes\\Car.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswB8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:07:05.633Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleManager.cs",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\VehicleManager.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Classes\\VehicleManager.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\VehicleManager.cs",
+              "RelativeToolTip": "RentVehicle\\Classes\\VehicleManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwHkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:16:29.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Program.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Program.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Program.cs",
+              "RelativeToolTip": "RentVehicle\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:10:09.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bike.cs",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Bike.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Classes\\Bike.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Bike.cs",
+              "RelativeToolTip": "RentVehicle\\Classes\\Bike.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:07:20.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Vehicle.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Classes\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Classes\\Vehicle.cs",
+              "RelativeToolTip": "RentVehicle\\Classes\\Vehicle.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T11:06:54.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Form1.cs",
+              "RelativeDocumentMoniker": "RentVehicle\\Form1.cs",
+              "ToolTip": "C:\\Users\\Furkan BULBUL\\Desktop\\Assignment\\RentVehicle\\RentVehicle\\Form1.cs [Design]",
+              "RelativeToolTip": "RentVehicle\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:58:48.643Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
