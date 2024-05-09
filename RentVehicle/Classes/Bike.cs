@@ -33,7 +33,13 @@ namespace RentVehicle.Classes
         public override decimal CalculateRentalCost(int numberOfDays)
         {
             // Consider additional charges for bikes
-            return base.CalculateRentalCost(numberOfDays);
+            decimal rentalCost = base.CalculateRentalCost(numberOfDays);
+            // Add additional charge for mileage
+            if (Mileage < 50)
+            {
+                rentalCost -= 5; // Discount for bikes with low mileage
+            }
+            return rentalCost;
         }
     }
 }

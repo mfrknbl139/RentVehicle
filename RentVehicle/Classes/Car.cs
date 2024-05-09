@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentVehicle.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,16 @@ namespace RentVehicle.Classes
         public int Seats { get; set; }
         public string FuelType { get; set; }
         public decimal TrunkCapacity { get; set; }
+        public bool HasAirConditioning { get; set; }
 
         // Constructor
-        public Car(string make, string model, int year, decimal rentalPricePerDay, int seats, string fuelType, decimal trunkCapacity)
+        public Car(string make, string model, int year, decimal rentalPricePerDay, int seats, string fuelType, decimal trunkCapacity, bool hasAirConditioning)
             : base(make, model, year, rentalPricePerDay)
         {
             Seats = seats;
             FuelType = fuelType;
             TrunkCapacity = trunkCapacity;
+            HasAirConditioning = hasAirConditioning;
         }
 
         // Override method to display details of the car
@@ -33,7 +36,13 @@ namespace RentVehicle.Classes
         public override decimal CalculateRentalCost(int numberOfDays)
         {
             // Consider additional charges for cars
-            return base.CalculateRentalCost(numberOfDays);
+            decimal rentalCost = base.CalculateRentalCost(numberOfDays);
+            // Add additional charge for air conditioning
+            if (HasAirConditioning)
+            {
+                rentalCost += 10; // Additional charge for air conditioning
+            }
+            return rentalCost;
         }
     }
 }
