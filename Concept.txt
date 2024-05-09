@@ -1,0 +1,37 @@
+Assignment Title: Vehicle Rental System
+
+Objective:
+The objective of this assignment is to design and implement a Vehicle Rental System using object-oriented programming principles in C#. 
+The system should demonstrate inheritance, encapsulation, polymorphism, and other relevant OOP concepts.
+
+Requirements:
+
+Class Structure:
+Create a base class called Vehicle with attributes such as make, model, year, rentalPricePerDay, and availability. 
+Implement appropriate constructors and methods for this class.
+
+Derive two subclasses from Vehicle: Car and Bike.
+Car class should have additional attributes like seats, fuelType, and trunkCapacity.
+Bike class should have additional attributes like engineCapacity, topSpeed, and mileage.
+
+Encapsulation:
+Ensure that all the attributes in the Vehicle, Car, and Bike classes are properly encapsulated using access modifiers (private, protected, public) and properties.
+Inheritance:
+Utilize inheritance to model the relationship between the base class Vehicle and its subclasses Car and Bike.
+Implement methods that demonstrate the use of inheritance, such as DisplayDetails() method which prints out the details of a vehicle.
+Polymorphism:
+Implement a method called CalculateRentalCost() in the Vehicle class. Override this method in the Car and Bike
+ classes to calculate the rental cost based on the number of days and any additional charges.
+Demonstrate polymorphism by creating an array or list of Vehicle objects, containing both cars and bikes. 
+Iterate through this collection and call the CalculateRentalCost() method for each object to calculate the rental cost.
+Additional Features (Optional):
+Implement additional features such as adding new vehicles to the rental system, managing bookings, checking availability,
+ generating rental invoices, etc., to extend the functionality of the system.
+Implement error handling and validation for user inputs.
+User Interface (Optional):
+Create a simple command-line interface or a graphical user interface (using WinForms or WPF) to interact with the Vehicle Rental System.
+Submission:
+Submit your C# project files (.cs files) along with a brief documentation explaining your implementation, the OOP concepts utilized,
+ and how they contribute to the design of the Vehicle Rental System.
+
+Feel free to customize or expand upon these requirements based on your preferences or the complexity level you want to achieve.

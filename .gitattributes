@@ -1,14 +1,2 @@
-# Visual Studio files
-.vs/
-bin/
-obj/
-*.user
-*.suo
-*.cache
-
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-
-# Visual Studio Code files
-.vscode/
+# C# Dosyaları için varsayılan dönüşüm ayarları
+*.cs text eol=crlf
