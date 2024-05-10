@@ -15,3 +15,6 @@ C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8
 C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\RentVehicle.genruntimeconfig.cache
 C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\ref\RentVehicle.dll
 C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\RentVehicle.sourcelink.json
+C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\RentVehicle.UserControllers.UserControl1.resources
+C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\RentVehicle.UserControllers.UserControl2.resources
+C:\Users\Furkan BULBUL\Desktop\Assignment\RentVehicle\RentVehicle\obj\Debug\net8.0-windows\RentVehicle.UserControllers.UserControl3.resources

@@ -159,35 +159,5 @@
         private Button button3;
         private Button button4;
         private Button button5;
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            // Implement functionality for button1 click
-            MessageBox.Show("Button 1 clicked!");
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            // Implement functionality for button2 click
-            MessageBox.Show("Button 2 clicked!");
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            // Implement functionality for button3 click
-            MessageBox.Show("Button 3 clicked!");
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-            // Implement functionality for button4 click
-            MessageBox.Show("Button 4 clicked!");
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-            // Implement functionality for button5 click
-            MessageBox.Show("Button 5 clicked!");
-        }
     }
 }
