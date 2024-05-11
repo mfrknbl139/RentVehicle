@@ -4,13 +4,13 @@
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControllers\UserControl1.cs">
+    <Compile Update="UserControls\ManageVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControllers\UserControl2.cs">
+    <Compile Update="UserControls\RentSpecificVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControllers\UserControl3.cs">
+    <Compile Update="UserControls\SearchVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

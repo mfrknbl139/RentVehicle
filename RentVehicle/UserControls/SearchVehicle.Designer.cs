@@ -1,6 +1,6 @@
 ﻿namespace RentVehicle.UserControllers
 {
-    partial class UserControl3
+    partial class SearchVehicle
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,17 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
             // 
-            // UserControl3
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(322, 232);
+            label1.Name = "label1";
+            label1.Size = new Size(118, 25);
+            label1.TabIndex = 0;
+            label1.Text = "SearchVehicle";
+            // 
+            // SearchVehicle
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            Name = "UserControl3";
-            Size = new Size(700, 700);
+            Controls.Add(label1);
+            Name = "SearchVehicle";
+            Size = new Size(800, 800);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

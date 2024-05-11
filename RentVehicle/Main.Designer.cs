@@ -1,6 +1,6 @@
 ﻿namespace RentVehicle
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,16 +30,16 @@
         {
             panel1 = new Panel();
             panel3 = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
             panel2 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             panel1.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -58,6 +58,15 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(599, 426);
             panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(tableLayoutPanel1);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(177, 426);
+            panel2.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -80,59 +89,50 @@
             tableLayoutPanel1.Size = new Size(175, 426);
             tableLayoutPanel1.TabIndex = 0;
             // 
-            // button5
+            // button1
             // 
-            button5.Location = new Point(3, 343);
-            button5.Name = "button5";
-            button5.Size = new Size(112, 34);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(3, 258);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 34);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(3, 173);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            button1.Location = new Point(3, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(169, 79);
+            button1.TabIndex = 0;
+            button1.Text = "Manage Vehicle";
+            button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             button2.Location = new Point(3, 88);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(169, 79);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Rent Vehicle";
             button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button3
             // 
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button3.Location = new Point(3, 173);
+            button3.Name = "button3";
+            button3.Size = new Size(169, 79);
+            button3.TabIndex = 2;
+            button3.Text = "Search Vehicle";
+            button3.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // button4
             // 
-            panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(177, 426);
-            panel2.TabIndex = 0;
+            button4.Location = new Point(3, 258);
+            button4.Name = "button4";
+            button4.Size = new Size(169, 79);
+            button4.TabIndex = 3;
+            button4.Text = "Settings";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(3, 343);
+            button5.Name = "button5";
+            button5.Size = new Size(169, 80);
+            button5.TabIndex = 4;
+            button5.Text = "Exit";
+            button5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -143,8 +143,8 @@
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 

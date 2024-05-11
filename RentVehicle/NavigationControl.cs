@@ -8,7 +8,7 @@ namespace RentVehicle
 {
     public class NavigationControl
     {
-        List<UserControl>userControlList= new List<UserControl>();
+        List<UserControl> userControlList = new List<UserControl>();
         Panel panel;
 
         public NavigationControl(List<UserControl> userControlList,Panel panel)
@@ -31,7 +31,7 @@ namespace RentVehicle
         {
             if (index < userControlList.Count()) 
             {
-             //   userControlList[index].BringToFront;
+                userControlList[index].BringToFront();
             }
         }
     }

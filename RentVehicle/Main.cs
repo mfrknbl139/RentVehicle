@@ -1,18 +1,22 @@
+using RentVehicle.UserControllers;
+
 namespace RentVehicle
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         NavigationControl navigationControl;
         NavigationButtons navigationButtons;
-        public Form1()
+
+        Color btnDefaultColor = Color.FromKnownColor(KnownColor.ControlLight);
+        Color btnSelectedColor = Color.FromKnownColor(KnownColor.ControlDark);
+
+        public Main()
         {
             InitializeComponent();
             InitializeNavigationControl();
             InitializeNavigationButtons();
 
-            Color btnDefaultColor=Color.FromKnownColor(KnownColor.ControlLight);
-            Color btnSelectedColor=Color.FromKnownColor(KnownColor.ControlDark);
-
+           
             // Attach event handlers to buttons
             button1.Click += Button1_Click;
             button2.Click += Button2_Click;
@@ -24,15 +28,11 @@ namespace RentVehicle
         private void InitializeNavigationControl()
         {
             List<UserControl> userControls = new List<UserControl>()
-            {new UserControl1(),new UserControl2(),new UserControl3()}; //button names
+            {new ManageVehicle(),new RentSpecificVehicle(),new SearchVehicle()}; //button names
           
             navigationControl = new NavigationControl(userControls, panel2);
             navigationControl.Display(0);
         }
-
-
-
-
 
 
 
