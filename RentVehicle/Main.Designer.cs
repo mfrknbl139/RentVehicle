@@ -37,9 +37,12 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -53,12 +56,12 @@
             // 
             // panel3
             // 
+            panel3.Controls.Add(pictureBox1);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(177, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(599, 426);
             panel3.TabIndex = 1;
-          //  panel3.Paint += panel3_Paint;
             // 
             // panel2
             // 
@@ -135,6 +138,18 @@
             button5.Text = "Exit";
             button5.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Image = Image.FromFile("../Resources/rent.png"); // Picturebu
+            pictureBox1.ImageLocation = "center";
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(599, 426);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -144,8 +159,10 @@
             Name = "Main";
             Text = "Form1";
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -160,5 +177,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private PictureBox pictureBox1;
     }
 }
