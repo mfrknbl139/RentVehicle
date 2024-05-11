@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentVehicle
+namespace RentVehicle.Forms
 {
     public class NavigationButtons
     {
@@ -12,7 +12,7 @@ namespace RentVehicle
         Color defaultColor;
         Color selectedColor;
 
-        public NavigationButtons(List<Button> buttons,Color defaultColor,Color selectedColor)
+        public NavigationButtons(List<Button> buttons, Color defaultColor, Color selectedColor)
         {
             this.buttons = buttons;
             this.defaultColor = defaultColor;
@@ -22,7 +22,7 @@ namespace RentVehicle
 
         private void SetButtonColor()
         {
-            foreach(Button button in buttons)
+            foreach (Button button in buttons)
             {
                 button.BackColor = defaultColor;
             }
@@ -32,13 +32,13 @@ namespace RentVehicle
         {
             foreach (Button button in buttons)
             {
-                if(button==selectedButton)
+                if (button == selectedButton)
                 {
-                    selectedButton.BackColor = selectedColor;  
+                    selectedButton.BackColor = selectedColor;
                 }
                 else
                 {
-                    button.BackColor = defaultColor;    
+                    button.BackColor = defaultColor;
                 }
             }
         }

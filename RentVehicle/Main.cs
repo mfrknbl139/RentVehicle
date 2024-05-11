@@ -1,3 +1,4 @@
+using RentVehicle.Forms;
 using RentVehicle.UserControllers;
 
 namespace RentVehicle
@@ -77,7 +78,7 @@ namespace RentVehicle
 
 
             // Implement functionality for button3 click
-            
+            MessageBox.Show("Button 3 clicked!");
         }
 
         private void Button4_Click(object sender, EventArgs e)
