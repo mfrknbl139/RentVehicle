@@ -58,6 +58,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(599, 426);
             panel3.TabIndex = 1;
+            panel3.Paint += panel3_Paint;
             // 
             // panel2
             // 
@@ -134,13 +135,13 @@
             button5.Text = "Exit";
             button5.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Main
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            Name = "Form1";
+            Name = "Main";
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);

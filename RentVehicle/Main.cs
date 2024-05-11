@@ -16,7 +16,7 @@ namespace RentVehicle
             InitializeNavigationControl();
             InitializeNavigationButtons();
 
-           
+
             // Attach event handlers to buttons
             button1.Click += Button1_Click;
             button2.Click += Button2_Click;
@@ -29,26 +29,19 @@ namespace RentVehicle
         {
             List<UserControl> userControls = new List<UserControl>()
             {new ManageVehicle(),new RentSpecificVehicle(),new SearchVehicle()}; //button names
-          
-            navigationControl = new NavigationControl(userControls, panel2);
+
+            navigationControl = new NavigationControl(userControls, panel3);
             navigationControl.Display(0);
         }
-
-
-
 
         private void InitializeNavigationButtons()
         {
             List<Button> buttons = new List<Button>()
-            { button1, button2 , button3 , button4 ,};
+            { button1, button2 , button3 , button4 ,button5};
 
             navigationButtons = new NavigationButtons(buttons, btnDefaultColor, btnSelectedColor);
             navigationButtons.Highlight(button1);
         }
-
-
-
-
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -58,7 +51,7 @@ namespace RentVehicle
 
 
             // Implement functionality for button1 click
-            MessageBox.Show("Button 1 clicked!");
+            //MessageBox.Show("Button 1 clicked!");
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -72,7 +65,7 @@ namespace RentVehicle
 
 
             // Implement functionality for button2 click
-            MessageBox.Show("Button 2 clicked!");
+           
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -84,7 +77,7 @@ namespace RentVehicle
 
 
             // Implement functionality for button3 click
-            MessageBox.Show("Button 3 clicked!");
+            
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -99,6 +92,8 @@ namespace RentVehicle
         {
 
             navigationButtons.Highlight(button5);
+
+            Application.Exit();
             // Implement functionality for button5 click
             MessageBox.Show("Button 5 clicked!");
         }
