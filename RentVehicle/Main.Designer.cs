@@ -30,6 +30,7 @@
         {
             panel1 = new Panel();
             panel3 = new Panel();
+            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             button1 = new Button();
@@ -37,12 +38,11 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -62,6 +62,17 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(599, 426);
             panel3.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.ImageLocation = "center";
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(599, 426);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -128,6 +139,7 @@
             button4.TabIndex = 3;
             button4.Text = "Settings";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click_1;
             // 
             // button5
             // 
@@ -137,18 +149,6 @@
             button5.TabIndex = 4;
             button5.Text = "Exit";
             button5.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Image.FromFile("../Resources/rent.png"); // Picturebu
-            pictureBox1.ImageLocation = "center";
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(599, 426);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // Main
             // 
@@ -160,9 +160,9 @@
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

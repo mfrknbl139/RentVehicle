@@ -66,7 +66,7 @@ namespace RentVehicle
 
 
             // Implement functionality for button2 click
-           
+
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -97,6 +97,11 @@ namespace RentVehicle
             Application.Exit();
             // Implement functionality for button5 click
             MessageBox.Show("Button 5 clicked!");
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
