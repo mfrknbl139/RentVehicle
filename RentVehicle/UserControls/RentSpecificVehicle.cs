@@ -72,18 +72,18 @@ namespace RentVehicle.UserControllers
             // 
             button1.Location = new Point(3, 3);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(176, 34);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Vehicle Avaliable";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             button2.Location = new Point(3, 115);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(176, 34);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Book Vehicle";
             button2.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -99,18 +99,18 @@ namespace RentVehicle.UserControllers
             // 
             button5.Location = new Point(3, 451);
             button5.Name = "button5";
-            button5.Size = new Size(112, 34);
+            button5.Size = new Size(176, 34);
             button5.TabIndex = 4;
-            button5.Text = "button5";
+            button5.Text = "Main Menu";
             button5.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             button3.Location = new Point(3, 227);
             button3.Name = "button3";
-            button3.Size = new Size(112, 34);
+            button3.Size = new Size(176, 34);
             button3.TabIndex = 2;
-            button3.Text = "button3";
+            button3.Text = "Calculate Cost";
             button3.UseVisualStyleBackColor = true;
             // 
             // RentSpecificVehicle

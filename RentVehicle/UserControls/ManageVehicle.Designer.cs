@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
             button4 = new Button();
             button5 = new Button();
             panel1.SuspendLayout();
@@ -58,33 +58,6 @@
             panel1.Size = new Size(794, 760);
             panel1.TabIndex = 1;
             // 
-            // button1
-            // 
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(3, 80);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(3, 157);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 1;
@@ -102,12 +75,39 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(300, 389);
+            tableLayoutPanel1.Size = new Size(352, 484);
             tableLayoutPanel1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(3, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(162, 34);
+            button1.TabIndex = 0;
+            button1.Text = "Add Vehicle";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(3, 99);
+            button2.Name = "button2";
+            button2.Size = new Size(162, 34);
+            button2.TabIndex = 1;
+            button2.Text = "Update Vehicle";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(3, 195);
+            button3.Name = "button3";
+            button3.Size = new Size(162, 34);
+            button3.TabIndex = 2;
+            button3.Text = "Remove Vehicle";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(3, 234);
+            button4.Location = new Point(3, 291);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 3;
@@ -116,11 +116,11 @@
             // 
             // button5
             // 
-            button5.Location = new Point(3, 311);
+            button5.Location = new Point(3, 387);
             button5.Name = "button5";
-            button5.Size = new Size(112, 34);
+            button5.Size = new Size(162, 34);
             button5.TabIndex = 4;
-            button5.Text = "button5";
+            button5.Text = "Main Menu";
             button5.UseVisualStyleBackColor = true;
             // 
             // ManageVehicle
@@ -144,8 +144,8 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Button button1;
         private Button button2;
+        private Button button3;
         private Button button4;
         private Button button5;
-        private Button button3;
     }
 }
