@@ -33,9 +33,9 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             button1 = new Button();
             button2 = new Button();
-            button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -75,53 +75,53 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(352, 484);
+            tableLayoutPanel1.Size = new Size(228, 191);
             tableLayoutPanel1.TabIndex = 3;
             // 
             // button1
             // 
             button1.Location = new Point(3, 3);
             button1.Name = "button1";
-            button1.Size = new Size(162, 34);
+            button1.Size = new Size(162, 32);
             button1.TabIndex = 0;
             button1.Text = "Add Vehicle";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(3, 99);
+            button2.Location = new Point(3, 41);
             button2.Name = "button2";
-            button2.Size = new Size(162, 34);
+            button2.Size = new Size(162, 32);
             button2.TabIndex = 1;
             button2.Text = "Update Vehicle";
             button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            button3.Location = new Point(3, 195);
-            button3.Name = "button3";
-            button3.Size = new Size(162, 34);
-            button3.TabIndex = 2;
-            button3.Text = "Remove Vehicle";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            button4.Location = new Point(3, 291);
+            button4.Location = new Point(3, 117);
             button4.Name = "button4";
-            button4.Size = new Size(112, 34);
+            button4.Size = new Size(112, 32);
             button4.TabIndex = 3;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(3, 387);
+            button5.Location = new Point(3, 155);
             button5.Name = "button5";
-            button5.Size = new Size(162, 34);
+            button5.Size = new Size(162, 33);
             button5.TabIndex = 4;
             button5.Text = "Main Menu";
             button5.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(3, 79);
+            button3.Name = "button3";
+            button3.Size = new Size(162, 32);
+            button3.TabIndex = 2;
+            button3.Text = "Remove Vehicle";
+            button3.UseVisualStyleBackColor = true;
             // 
             // ManageVehicle
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentVehicle.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace RentVehicle.UserControllers
 {
     public partial class RentSpecificVehicle : UserControl
     {
+        private VehicleManager vehicleManager;
+        private string make;
+        private string model;
+        private int year;
+        private decimal rentalPrice;
+        private int vehicleId; // Assuming you need this for Update and Remove operations
         public RentSpecificVehicle()
         {
             InitializeComponent();
+            vehicleManager = new VehicleManager();
         }
 
         private void InitializeComponent()
@@ -65,7 +73,7 @@ namespace RentVehicle.UserControllers
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(433, 563);
+            tableLayoutPanel1.Size = new Size(262, 208);
             tableLayoutPanel1.TabIndex = 4;
             // 
             // button1
@@ -79,7 +87,7 @@ namespace RentVehicle.UserControllers
             // 
             // button2
             // 
-            button2.Location = new Point(3, 115);
+            button2.Location = new Point(3, 44);
             button2.Name = "button2";
             button2.Size = new Size(176, 34);
             button2.TabIndex = 1;
@@ -88,7 +96,7 @@ namespace RentVehicle.UserControllers
             // 
             // button4
             // 
-            button4.Location = new Point(3, 339);
+            button4.Location = new Point(3, 126);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 3;
@@ -97,7 +105,7 @@ namespace RentVehicle.UserControllers
             // 
             // button5
             // 
-            button5.Location = new Point(3, 451);
+            button5.Location = new Point(3, 167);
             button5.Name = "button5";
             button5.Size = new Size(176, 34);
             button5.TabIndex = 4;
@@ -106,7 +114,7 @@ namespace RentVehicle.UserControllers
             // 
             // button3
             // 
-            button3.Location = new Point(3, 227);
+            button3.Location = new Point(3, 85);
             button3.Name = "button3";
             button3.Size = new Size(176, 34);
             button3.TabIndex = 2;
@@ -133,5 +141,7 @@ namespace RentVehicle.UserControllers
         private Button button4;
         private Button button5;
         private Button button3;
+
+
     }
 }
