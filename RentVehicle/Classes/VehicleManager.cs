@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RentVehicle.Classes
 {
@@ -116,6 +114,12 @@ namespace RentVehicle.Classes
                 Console.WriteLine("Vehicle not found.");
             }
             return 0; // Return 0 if rental cost cannot be calculated
+        }
+
+        // Method to get the list of all vehicles
+        public List<Vehicle> GetVehicles()
+        {
+            return vehicles;
         }
     }
 }

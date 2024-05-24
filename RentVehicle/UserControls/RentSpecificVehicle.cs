@@ -35,6 +35,7 @@ namespace RentVehicle.UserControllers
             button4 = new Button();
             button5 = new Button();
             button3 = new Button();
+            listBox1 = new ListBox();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -50,6 +51,7 @@ namespace RentVehicle.UserControllers
             // 
             // panel1
             // 
+            panel1.Controls.Add(listBox1);
             panel1.Controls.Add(tableLayoutPanel1);
             panel1.Location = new Point(3, 51);
             panel1.Name = "panel1";
@@ -65,7 +67,7 @@ namespace RentVehicle.UserControllers
             tableLayoutPanel1.Controls.Add(button4, 0, 3);
             tableLayoutPanel1.Controls.Add(button5, 0, 4);
             tableLayoutPanel1.Controls.Add(button3, 0, 2);
-            tableLayoutPanel1.Location = new Point(188, 83);
+            tableLayoutPanel1.Location = new Point(76, 63);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 5;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -73,7 +75,7 @@ namespace RentVehicle.UserControllers
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(262, 208);
+            tableLayoutPanel1.Size = new Size(252, 201);
             tableLayoutPanel1.TabIndex = 4;
             // 
             // button1
@@ -87,7 +89,7 @@ namespace RentVehicle.UserControllers
             // 
             // button2
             // 
-            button2.Location = new Point(3, 44);
+            button2.Location = new Point(3, 43);
             button2.Name = "button2";
             button2.Size = new Size(176, 34);
             button2.TabIndex = 1;
@@ -96,7 +98,7 @@ namespace RentVehicle.UserControllers
             // 
             // button4
             // 
-            button4.Location = new Point(3, 126);
+            button4.Location = new Point(3, 123);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 3;
@@ -105,7 +107,7 @@ namespace RentVehicle.UserControllers
             // 
             // button5
             // 
-            button5.Location = new Point(3, 167);
+            button5.Location = new Point(3, 163);
             button5.Name = "button5";
             button5.Size = new Size(176, 34);
             button5.TabIndex = 4;
@@ -114,12 +116,21 @@ namespace RentVehicle.UserControllers
             // 
             // button3
             // 
-            button3.Location = new Point(3, 85);
+            button3.Location = new Point(3, 83);
             button3.Name = "button3";
             button3.Size = new Size(176, 34);
             button3.TabIndex = 2;
             button3.Text = "Calculate Cost";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 25;
+            listBox1.Location = new Point(366, 63);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(267, 204);
+            listBox1.TabIndex = 5;
             // 
             // RentSpecificVehicle
             // 
@@ -141,7 +152,6 @@ namespace RentVehicle.UserControllers
         private Button button4;
         private Button button5;
         private Button button3;
-
-
+        private ListBox listBox1;
     }
 }
