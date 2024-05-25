@@ -69,11 +69,11 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(382, 212);
+            listBox1.Location = new Point(27, 249);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(180, 154);
+            listBox1.Size = new Size(535, 179);
             listBox1.TabIndex = 4;
-            //listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // tableLayoutPanel1
             // 

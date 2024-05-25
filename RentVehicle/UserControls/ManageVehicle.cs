@@ -9,16 +9,19 @@ namespace RentVehicle.UserControllers
         private VehicleManager vehicleManager;
         private int selectedVehicleId;
 
-        // VehicleManager parametresini alacak şekilde yapıcıyı tanımlayın
-        public ManageVehicle(VehicleManager manager)
+        public ManageVehicle(VehicleManager vehicleManager)
         {
             InitializeComponent();
-            vehicleManager = manager;
-            LoadVehicles(); // Araçları yükle ve listele
-            listBox1.SelectedIndexChanged += ListBox1_SelectedIndexChanged;
+            this.vehicleManager = vehicleManager;
+
+            // Attach event handlers to buttons
             button1.Click += AddVehicleButton_Click;
             button2.Click += UpdateVehicleButton_Click;
             button3.Click += RemoveVehicleButton_Click;
+            button5.Click += ExitConsoleButton_Click;
+
+            // Load vehicles into the ListBox
+            LoadVehicles();
         }
 
         private void LoadVehicles()
@@ -30,11 +33,11 @@ namespace RentVehicle.UserControllers
             }
         }
 
-        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem is Vehicle selectedVehicle)
+            var selectedVehicle = listBox1.SelectedItem as Vehicle;
+            if (selectedVehicle != null)
             {
-                selectedVehicleId = selectedVehicle.Id;
                 textBoxMake.Text = selectedVehicle.Make;
                 textBoxModel.Text = selectedVehicle.Model;
                 textBoxYear.Text = selectedVehicle.Year.ToString();
@@ -42,7 +45,8 @@ namespace RentVehicle.UserControllers
             }
         }
 
-        private void AddVehicleButton_Click(object sender, EventArgs e)
+
+        private void AddVehicleButton_Click(object? sender, EventArgs e)
         {
             var make = textBoxMake.Text;
             var model = textBoxModel.Text;
@@ -54,7 +58,7 @@ namespace RentVehicle.UserControllers
             MessageBox.Show("Vehicle added!");
         }
 
-        private void UpdateVehicleButton_Click(object sender, EventArgs e)
+        private void UpdateVehicleButton_Click(object? sender, EventArgs e)
         {
             var make = textBoxMake.Text;
             var model = textBoxModel.Text;
@@ -66,11 +70,17 @@ namespace RentVehicle.UserControllers
             MessageBox.Show("Vehicle updated!");
         }
 
-        private void RemoveVehicleButton_Click(object sender, EventArgs e)
+        private void RemoveVehicleButton_Click(object? sender, EventArgs e)
         {
             vehicleManager.RemoveVehicle(selectedVehicleId);
             LoadVehicles();
             MessageBox.Show("Vehicle removed!");
         }
+
+        private void ExitConsoleButton_Click(object? sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
