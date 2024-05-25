@@ -9,19 +9,16 @@ namespace RentVehicle.UserControllers
         private VehicleManager vehicleManager;
         private int selectedVehicleId;
 
-        public ManageVehicle()
+        // VehicleManager parametresini alacak şekilde yapıcıyı tanımlayın
+        public ManageVehicle(VehicleManager manager)
         {
             InitializeComponent();
-            vehicleManager = new VehicleManager();
-
-            // Attach event handlers to buttons
+            vehicleManager = manager;
+            LoadVehicles(); // Araçları yükle ve listele
+            listBox1.SelectedIndexChanged += ListBox1_SelectedIndexChanged;
             button1.Click += AddVehicleButton_Click;
             button2.Click += UpdateVehicleButton_Click;
             button3.Click += RemoveVehicleButton_Click;
-            button5.Click += ExitConsoleButton_Click;
-
-            // Load vehicles into the ListBox
-            LoadVehicles();
         }
 
         private void LoadVehicles()
@@ -33,7 +30,7 @@ namespace RentVehicle.UserControllers
             }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem is Vehicle selectedVehicle)
             {
@@ -74,11 +71,6 @@ namespace RentVehicle.UserControllers
             vehicleManager.RemoveVehicle(selectedVehicleId);
             LoadVehicles();
             MessageBox.Show("Vehicle removed!");
-        }
-
-        private void ExitConsoleButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
