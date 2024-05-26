@@ -13,7 +13,7 @@
     <Compile Update="UserControls\RentSpecificVehicle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControls\SearchVehicle.cs">
+    <Compile Update="UserControls\ListUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

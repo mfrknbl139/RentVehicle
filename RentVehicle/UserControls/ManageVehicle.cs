@@ -1,4 +1,5 @@
 ﻿using RentVehicle.Classes;
+using RentVehicle.Forms;
 using System;
 using System.Windows.Forms;
 
@@ -82,7 +83,7 @@ namespace RentVehicle.UserControllers
 
         private void ExitConsoleButton_Click(object? sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void labelRentalPrice_Click(object sender, EventArgs e)

@@ -35,6 +35,8 @@
             label2 = new Label();
             panel1 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
+            label1 = new Label();
+            VehicleType = new ComboBox();
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -43,7 +45,7 @@
             // labelRentalPrice
             // 
             labelRentalPrice.AutoSize = true;
-            labelRentalPrice.Location = new Point(2, 69);
+            labelRentalPrice.Location = new Point(2, 90);
             labelRentalPrice.Margin = new Padding(2, 0, 2, 0);
             labelRentalPrice.Name = "labelRentalPrice";
             labelRentalPrice.Size = new Size(72, 15);
@@ -54,7 +56,7 @@
             // labelYear
             // 
             labelYear.AutoSize = true;
-            labelYear.Location = new Point(2, 46);
+            labelYear.Location = new Point(2, 60);
             labelYear.Margin = new Padding(2, 0, 2, 0);
             labelYear.Name = "labelYear";
             labelYear.Size = new Size(32, 15);
@@ -64,7 +66,7 @@
             // labelModel
             // 
             labelModel.AutoSize = true;
-            labelModel.Location = new Point(2, 23);
+            labelModel.Location = new Point(2, 30);
             labelModel.Margin = new Padding(2, 0, 2, 0);
             labelModel.Name = "labelModel";
             labelModel.Size = new Size(44, 15);
@@ -85,7 +87,7 @@
             // textBoxRentalPrice
             // 
             textBoxRentalPrice.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxRentalPrice.Location = new Point(79, 71);
+            textBoxRentalPrice.Location = new Point(79, 92);
             textBoxRentalPrice.Margin = new Padding(2);
             textBoxRentalPrice.Name = "textBoxRentalPrice";
             textBoxRentalPrice.Size = new Size(144, 23);
@@ -94,7 +96,7 @@
             // textBoxYear
             // 
             textBoxYear.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxYear.Location = new Point(79, 48);
+            textBoxYear.Location = new Point(79, 62);
             textBoxYear.Margin = new Padding(2);
             textBoxYear.Name = "textBoxYear";
             textBoxYear.Size = new Size(144, 23);
@@ -103,7 +105,7 @@
             // textBoxModel
             // 
             textBoxModel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxModel.Location = new Point(79, 25);
+            textBoxModel.Location = new Point(79, 32);
             textBoxModel.Margin = new Padding(2);
             textBoxModel.Name = "textBoxModel";
             textBoxModel.Size = new Size(144, 23);
@@ -195,10 +197,10 @@
             // 
             // listBox1
             // 
-            listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            listBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(17, 206);
+            listBox1.Location = new Point(16, 218);
             listBox1.Margin = new Padding(2);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(347, 139);
@@ -238,6 +240,7 @@
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.5F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.5F));
+            tableLayoutPanel2.Controls.Add(label1, 0, 4);
             tableLayoutPanel2.Controls.Add(textBoxYear, 1, 2);
             tableLayoutPanel2.Controls.Add(labelModel, 0, 1);
             tableLayoutPanel2.Controls.Add(labelMake, 0, 0);
@@ -246,15 +249,35 @@
             tableLayoutPanel2.Controls.Add(labelYear, 0, 2);
             tableLayoutPanel2.Controls.Add(textBoxModel, 1, 1);
             tableLayoutPanel2.Controls.Add(labelRentalPrice, 0, 3);
+            tableLayoutPanel2.Controls.Add(VehicleType, 1, 4);
             tableLayoutPanel2.Location = new Point(141, 30);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 4;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Size = new Size(225, 94);
+            tableLayoutPanel2.RowCount = 5;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel2.Size = new Size(225, 150);
             tableLayoutPanel2.TabIndex = 14;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(2, 120);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 15);
+            label1.TabIndex = 16;
+            label1.Text = "Type";
+            // 
+            // VehicleType
+            // 
+            VehicleType.FormattingEnabled = true;
+            VehicleType.Location = new Point(80, 123);
+            VehicleType.Name = "VehicleType";
+            VehicleType.Size = new Size(142, 23);
+            VehicleType.TabIndex = 15;
             // 
             // ManageVehicle
             // 
@@ -292,5 +315,7 @@
         private Label label2;
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel2;
+        private Label label1;
+        private ComboBox VehicleType;
     }
 }

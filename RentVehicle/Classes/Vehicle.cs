@@ -12,6 +12,8 @@ namespace RentVehicle.Classes
     {
         // Properties
         public int Id { get; private set; }
+
+        public VehicleType Type { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
@@ -22,6 +24,11 @@ namespace RentVehicle.Classes
         // Static counter for assigning unique IDs to vehicles
         private static int nextId = 1;
 
+        public enum VehicleType
+        {
+            Car,
+            Bike
+        }
         // Constructor
         public Vehicle(string make, string model, int year, decimal rentalPricePerDay)
         {

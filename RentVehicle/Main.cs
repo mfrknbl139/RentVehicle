@@ -44,7 +44,7 @@ namespace RentVehicle
         {
             List<UserControl> userControls = new List<UserControl>()
             {
-                new ManageVehicle(vehicleManager), new RentSpecificVehicle(vehicleManager), new SearchVehicle()
+                new ManageVehicle(vehicleManager), new RentSpecificVehicle(vehicleManager), new ListUsers()
             };
 
             navigationControl = new NavigationControl(userControls, panel3);
@@ -82,7 +82,7 @@ namespace RentVehicle
         private void Button4_Click(object sender, EventArgs e)
         {
             navigationButtons.Highlight(button4);
-            MessageBox.Show("Button 4 clicked!");
+            MessageBox.Show("Settings Menu");
         }
 
         private void Button5_Click(object sender, EventArgs e)

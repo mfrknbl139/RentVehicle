@@ -113,7 +113,7 @@
             button3.Name = "button3";
             button3.Size = new Size(136, 91);
             button3.TabIndex = 2;
-            button3.Text = "Search Vehicle";
+            button3.Text = "List Users";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
