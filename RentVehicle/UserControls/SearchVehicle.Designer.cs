@@ -47,7 +47,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(316, 0);
+            label1.Location = new Point(184, 0);
             label1.Name = "label1";
             label1.Size = new Size(118, 25);
             label1.TabIndex = 0;
@@ -87,7 +87,7 @@
             panel1.Controls.Add(tableLayoutPanel2);
             panel1.Location = new Point(3, 38);
             panel1.Name = "panel1";
-            panel1.Size = new Size(794, 759);
+            panel1.Size = new Size(661, 587);
             panel1.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -99,7 +99,7 @@
             tableLayoutPanel2.Controls.Add(button5, 0, 3);
             tableLayoutPanel2.Controls.Add(button6, 0, 4);
             tableLayoutPanel2.Controls.Add(button7, 0, 2);
-            tableLayoutPanel2.Location = new Point(247, 185);
+            tableLayoutPanel2.Location = new Point(0, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 5;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -107,7 +107,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.Size = new Size(300, 389);
+            tableLayoutPanel2.Size = new Size(231, 249);
             tableLayoutPanel2.TabIndex = 4;
             // 
             // button3
@@ -121,7 +121,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(3, 80);
+            button4.Location = new Point(3, 52);
             button4.Name = "button4";
             button4.Size = new Size(112, 34);
             button4.TabIndex = 1;
@@ -130,7 +130,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(3, 234);
+            button5.Location = new Point(3, 150);
             button5.Name = "button5";
             button5.Size = new Size(112, 34);
             button5.TabIndex = 3;
@@ -139,7 +139,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(3, 311);
+            button6.Location = new Point(3, 199);
             button6.Name = "button6";
             button6.Size = new Size(112, 34);
             button6.TabIndex = 4;
@@ -148,7 +148,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(3, 157);
+            button7.Location = new Point(3, 101);
             button7.Name = "button7";
             button7.Size = new Size(112, 34);
             button7.TabIndex = 2;
@@ -162,7 +162,7 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Name = "SearchVehicle";
-            Size = new Size(800, 800);
+            Size = new Size(513, 483);
             tableLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
