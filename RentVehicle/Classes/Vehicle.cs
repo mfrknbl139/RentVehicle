@@ -44,6 +44,11 @@ namespace RentVehicle.Classes
         {
             return RentalPricePerDay * numberOfDays;
         }
+        // ToString() method override
+        public override string ToString()
+        {
+            return $"{Make} {Model} ({Year})";
+        }
     }
 }
 

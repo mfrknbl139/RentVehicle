@@ -47,9 +47,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(184, 0);
+            label1.Location = new Point(129, 0);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(118, 25);
+            label1.Size = new Size(79, 15);
             label1.TabIndex = 0;
             label1.Text = "SearchVehicle";
             // 
@@ -85,9 +86,10 @@
             // panel1
             // 
             panel1.Controls.Add(tableLayoutPanel2);
-            panel1.Location = new Point(3, 38);
+            panel1.Location = new Point(2, 23);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(661, 587);
+            panel1.Size = new Size(463, 352);
             panel1.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -99,7 +101,8 @@
             tableLayoutPanel2.Controls.Add(button5, 0, 3);
             tableLayoutPanel2.Controls.Add(button6, 0, 4);
             tableLayoutPanel2.Controls.Add(button7, 0, 2);
-            tableLayoutPanel2.Location = new Point(0, 3);
+            tableLayoutPanel2.Location = new Point(0, 2);
+            tableLayoutPanel2.Margin = new Padding(2, 2, 2, 2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 5;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -107,62 +110,68 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.Size = new Size(231, 249);
+            tableLayoutPanel2.Size = new Size(162, 195);
             tableLayoutPanel2.TabIndex = 4;
             // 
             // button3
             // 
-            button3.Location = new Point(3, 3);
+            button3.Location = new Point(2, 2);
+            button3.Margin = new Padding(2, 2, 2, 2);
             button3.Name = "button3";
-            button3.Size = new Size(112, 34);
+            button3.Size = new Size(158, 35);
             button3.TabIndex = 0;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(3, 52);
+            button4.Location = new Point(2, 41);
+            button4.Margin = new Padding(2, 2, 2, 2);
             button4.Name = "button4";
-            button4.Size = new Size(112, 34);
+            button4.Size = new Size(158, 35);
             button4.TabIndex = 1;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(3, 150);
+            button5.Location = new Point(2, 119);
+            button5.Margin = new Padding(2, 2, 2, 2);
             button5.Name = "button5";
-            button5.Size = new Size(112, 34);
+            button5.Size = new Size(158, 35);
             button5.TabIndex = 3;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            button6.Location = new Point(3, 199);
+            button6.Location = new Point(2, 158);
+            button6.Margin = new Padding(2, 2, 2, 2);
             button6.Name = "button6";
-            button6.Size = new Size(112, 34);
+            button6.Size = new Size(158, 35);
             button6.TabIndex = 4;
             button6.Text = "button6";
             button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            button7.Location = new Point(3, 101);
+            button7.Location = new Point(2, 80);
+            button7.Margin = new Padding(2, 2, 2, 2);
             button7.Name = "button7";
-            button7.Size = new Size(112, 34);
+            button7.Size = new Size(158, 35);
             button7.TabIndex = 2;
             button7.Text = "button7";
             button7.UseVisualStyleBackColor = true;
             // 
             // SearchVehicle
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "SearchVehicle";
-            Size = new Size(513, 483);
+            Size = new Size(500, 400);
             tableLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);

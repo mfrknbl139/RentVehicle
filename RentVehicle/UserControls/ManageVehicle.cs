@@ -38,13 +38,13 @@ namespace RentVehicle.UserControllers
             var selectedVehicle = listBox1.SelectedItem as Vehicle;
             if (selectedVehicle != null)
             {
+                selectedVehicleId = selectedVehicle.Id; // Eklenen satır
                 textBoxMake.Text = selectedVehicle.Make;
                 textBoxModel.Text = selectedVehicle.Model;
                 textBoxYear.Text = selectedVehicle.Year.ToString();
                 textBoxRentalPrice.Text = selectedVehicle.RentalPricePerDay.ToString();
             }
         }
-
 
         private void AddVehicleButton_Click(object? sender, EventArgs e)
         {
@@ -53,10 +53,16 @@ namespace RentVehicle.UserControllers
             var year = int.Parse(textBoxYear.Text);
             var rentalPrice = decimal.Parse(textBoxRentalPrice.Text);
 
-            vehicleManager.AddVehicle(new Vehicle(make, model, year, rentalPrice));
+            var newVehicle = new Vehicle(make, model, year, rentalPrice);
+            vehicleManager.AddVehicle(newVehicle);
+
+            // Burada ListBox'a Vehicle nesnesi yerine, Vehicle'ın ToString() metodu çağrılarak ekleniyor.
+            listBox1.Items.Add(newVehicle.ToString());
+
             LoadVehicles();
             MessageBox.Show("Vehicle added!");
         }
+
 
         private void UpdateVehicleButton_Click(object? sender, EventArgs e)
         {
@@ -93,6 +99,16 @@ namespace RentVehicle.UserControllers
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelMake_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
