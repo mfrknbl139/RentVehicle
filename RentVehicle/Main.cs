@@ -50,7 +50,7 @@ namespace RentVehicle
             };
 
             navigationControl = new NavigationControl(userControls, panel3);
-            navigationControl.Display(0);
+            navigationControl.Display(3);
         }
 
         private void InitializeNavigationButtons()
@@ -78,7 +78,7 @@ namespace RentVehicle
         {
             navigationButtons.Highlight(button3);
             navigationControl.Display(2);
-            MessageBox.Show("Button 3 clicked!");
+           // MessageBox.Show("Button 3 clicked!");
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace RentVehicle
         {
             navigationButtons.Highlight(button5);
             Application.Exit();
-            MessageBox.Show("Button 5 clicked!");
+          //  MessageBox.Show("Button 5 clicked!");
         }
     }
 }
