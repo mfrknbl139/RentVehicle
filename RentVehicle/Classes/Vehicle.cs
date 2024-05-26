@@ -30,7 +30,7 @@ namespace RentVehicle.Classes
             Bike
         }
         // Constructor
-        public Vehicle(string make, string model, int year, decimal rentalPricePerDay)
+        public Vehicle(string make, string model, int year, decimal rentalPricePerDay, VehicleType type)
         {
             Id = nextId++; // Assign a unique ID to each vehicle
             Make = make;
@@ -38,6 +38,7 @@ namespace RentVehicle.Classes
             Year = year;
             RentalPricePerDay = rentalPricePerDay;
             IsAvailable = true; // By default, vehicle is available
+            Type = type; // Set the vehicle typee
         }
 
         // Method to display details of the vehicle

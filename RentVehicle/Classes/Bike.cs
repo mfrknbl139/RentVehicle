@@ -15,7 +15,7 @@ namespace RentVehicle.Classes
 
         // Constructor
         public Bike(string make, string model, int year, decimal rentalPricePerDay, int engineCapacity, int topSpeed, decimal mileage)
-            : base(make, model, year, rentalPricePerDay)
+            : base(make, model, year, rentalPricePerDay,VehicleType.Bike)
         {
             EngineCapacity = engineCapacity;
             TopSpeed = topSpeed;

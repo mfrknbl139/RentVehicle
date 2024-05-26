@@ -17,7 +17,7 @@ namespace RentVehicle.Classes
 
         // Constructor
         public Car(string make, string model, int year, decimal rentalPricePerDay, int seats, string fuelType, decimal trunkCapacity, bool hasAirConditioning)
-            : base(make, model, year, rentalPricePerDay)
+            : base(make, model, year, rentalPricePerDay,VehicleType.Car)
         {
             Seats = seats;
             FuelType = fuelType;

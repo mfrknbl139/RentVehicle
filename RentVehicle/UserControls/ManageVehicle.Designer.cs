@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             labelRentalPrice = new Label();
             labelYear = new Label();
             labelModel = new Label();
@@ -37,9 +38,13 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             label1 = new Label();
             VehicleType = new ComboBox();
+            vehicleBindingSource = new BindingSource(components);
+            bikeBindingSource = new BindingSource(components);
             tableLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)vehicleBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bikeBindingSource).BeginInit();
             SuspendLayout();
             // 
             // labelRentalPrice
@@ -273,11 +278,23 @@
             // 
             // VehicleType
             // 
+            VehicleType.DataSource = vehicleBindingSource;
+            VehicleType.DisplayMember = "Type";
             VehicleType.FormattingEnabled = true;
             VehicleType.Location = new Point(80, 123);
             VehicleType.Name = "VehicleType";
             VehicleType.Size = new Size(142, 23);
             VehicleType.TabIndex = 15;
+            VehicleType.ValueMember = "Type";
+            VehicleType.SelectedIndexChanged += VehicleType_SelectedIndexChanged;
+            // 
+            // vehicleBindingSource
+            // 
+            vehicleBindingSource.DataSource = typeof(Classes.Vehicle);
+            // 
+            // bikeBindingSource
+            // 
+            bikeBindingSource.DataSource = typeof(Classes.Bike);
             // 
             // ManageVehicle
             // 
@@ -292,6 +309,8 @@
             panel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)vehicleBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bikeBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -317,5 +336,7 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Label label1;
         private ComboBox VehicleType;
+        private BindingSource bikeBindingSource;
+        private BindingSource vehicleBindingSource;
     }
 }
