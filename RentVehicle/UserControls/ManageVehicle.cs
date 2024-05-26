@@ -14,13 +14,11 @@ namespace RentVehicle.UserControllers
             InitializeComponent();
             this.vehicleManager = vehicleManager;
 
-            // Attach event handlers to buttons
             button1.Click += AddVehicleButton_Click;
             button2.Click += UpdateVehicleButton_Click;
             button3.Click += RemoveVehicleButton_Click;
             button5.Click += ExitConsoleButton_Click;
 
-            // Load vehicles into the ListBox
             LoadVehicles();
         }
 
@@ -38,7 +36,7 @@ namespace RentVehicle.UserControllers
             var selectedVehicle = listBox1.SelectedItem as Vehicle;
             if (selectedVehicle != null)
             {
-                selectedVehicleId = selectedVehicle.Id; // Eklenen satır
+                selectedVehicleId = selectedVehicle.Id;
                 textBoxMake.Text = selectedVehicle.Make;
                 textBoxModel.Text = selectedVehicle.Model;
                 textBoxYear.Text = selectedVehicle.Year.ToString();
@@ -56,7 +54,6 @@ namespace RentVehicle.UserControllers
             var newVehicle = new Vehicle(make, model, year, rentalPrice);
             vehicleManager.AddVehicle(newVehicle);
 
-            // Burada ListBox'a Vehicle nesnesi yerine, Vehicle'ın ToString() metodu çağrılarak ekleniyor.
             listBox1.Items.Add(newVehicle.ToString());
 
             LoadVehicles();

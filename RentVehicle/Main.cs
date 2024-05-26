@@ -22,12 +22,11 @@ namespace RentVehicle
         {
             InitializeComponent();
 
-            vehicleManager = new VehicleManager(); // VehicleManager burada ba?lat?l?yor
+            vehicleManager = new VehicleManager();
 
             InitializeNavigationControl();
             InitializeNavigationButtons();
 
-            // Attach event handlers to buttons
             button1.Click += Button1_Click;
             button2.Click += Button2_Click;
             button3.Click += Button3_Click;
@@ -37,7 +36,6 @@ namespace RentVehicle
             var manageVehicleControl = new ManageVehicle(vehicleManager);
             var rentSpecificVehicleControl = new RentSpecificVehicle(vehicleManager);
 
-            // UserControl'leri form üzerine ekleyin
             this.Controls.Add(manageVehicleControl);
             this.Controls.Add(rentSpecificVehicleControl);
         }

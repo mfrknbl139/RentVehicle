@@ -7,19 +7,17 @@ namespace RentVehicle.UserControllers
     public partial class RentSpecificVehicle : UserControl
     {
         private VehicleManager vehicleManager;
-        private int selectedVehicleId;
-
-        // VehicleManager parametresini alacak şekilde yapıcıyı tanımlayın
+        private int selectedVehicleId;   
         public RentSpecificVehicle(VehicleManager manager)
         {
             InitializeComponent();
             vehicleManager = manager;
-            LoadVehicles(); // Araçları yükle ve listele
+            LoadVehicles(); 
             listBox1.SelectedIndexChanged += ListBox1_SelectedIndexChanged;
             button1.Click += CheckAvailabilityButton_Click;
             button2.Click += BookVehicleButton_Click;
             button3.Click += CalculateCostButton_Click;
-            button4.Click += ListAddedVehiclesButton_Click; // button4 olay işleyicisini ekle
+            button4.Click += ListAddedVehiclesButton_Click;
         }
 
         private void LoadVehicles()
@@ -27,7 +25,7 @@ namespace RentVehicle.UserControllers
             listBox1.Items.Clear();
             foreach (var vehicle in vehicleManager.GetVehicles())
             {
-                listBox1.Items.Add(vehicle.Make + " " + vehicle.Model); // Görüntülenecek bilgileri özelleştirin
+                listBox1.Items.Add(vehicle.Make + " " + vehicle.Model);
             }
         }
 
@@ -37,7 +35,7 @@ namespace RentVehicle.UserControllers
             {
                 var selectedVehicle = vehicleManager.GetVehicles()[listBox1.SelectedIndex];
                 selectedVehicleId = selectedVehicle.Id;
-                // Burada gerekli bilgileri başka yerlere gösterebilirsiniz.
+               
             }
         }
 
@@ -55,23 +53,22 @@ namespace RentVehicle.UserControllers
 
         private void BookVehicleButton_Click(object sender, EventArgs e)
         {
-            int numberOfDays = 3; // Örnek olarak sabit bir değer verdim
+            int numberOfDays = 3;
             vehicleManager.BookVehicle(selectedVehicleId, numberOfDays);
-            LoadVehicles(); // Araçları yeniden yükleyerek güncellenmiş durumu gösterebilirsiniz
+            LoadVehicles(); 
             MessageBox.Show("Vehicle booked!");
         }
 
         private void CalculateCostButton_Click(object sender, EventArgs e)
         {
-            int numberOfDays = 3; // Örnek olarak sabit bir değer verdim
+            int numberOfDays = 3;
             decimal cost = vehicleManager.CalculateRentalCost(selectedVehicleId, numberOfDays);
             MessageBox.Show($"Total cost for {numberOfDays} days is ${cost}");
         }
 
-        // button4 için olay işleyicisi
+      
         private void ListAddedVehiclesButton_Click(object sender, EventArgs e)
         {
-            // ManageVehicle'da eklenen araçları listele
             listBox1.Items.Clear();
             foreach (var vehicle in vehicleManager.GetVehicles())
             {
