@@ -2,6 +2,7 @@
 {
     partial class UC_ListUsers
     {
+
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -34,8 +35,8 @@
             button2 = new Button();
             panel1 = new Panel();
             tableLayoutPanel3 = new TableLayoutPanel();
-            textBoxYear = new TextBox();
-            textBoxModel = new TextBox();
+            textBoxEmail = new TextBox();
+            textBoxName = new TextBox();
             labelMake = new Label();
             labelModel = new Label();
             listBox1 = new ListBox();
@@ -106,8 +107,8 @@
             tableLayoutPanel3.ColumnCount = 2;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.11838F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.88162F));
-            tableLayoutPanel3.Controls.Add(textBoxYear, 1, 1);
-            tableLayoutPanel3.Controls.Add(textBoxModel, 1, 0);
+            tableLayoutPanel3.Controls.Add(textBoxEmail, 1, 1);
+            tableLayoutPanel3.Controls.Add(textBoxName, 1, 0);
             tableLayoutPanel3.Controls.Add(labelMake, 0, 0);
             tableLayoutPanel3.Controls.Add(labelModel, 0, 1);
             tableLayoutPanel3.Location = new Point(177, 10);
@@ -120,21 +121,21 @@
             tableLayoutPanel3.Size = new Size(321, 117);
             tableLayoutPanel3.TabIndex = 15;
             // 
-            // textBoxYear
+            // textBoxEmail
             // 
-            textBoxYear.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxYear.Location = new Point(74, 61);
-            textBoxYear.Name = "textBoxYear";
-            textBoxYear.Size = new Size(244, 31);
-            textBoxYear.TabIndex = 7;
+            textBoxEmail.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxEmail.Location = new Point(74, 61);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(244, 31);
+            textBoxEmail.TabIndex = 7;
             // 
-            // textBoxModel
+            // textBoxName
             // 
-            textBoxModel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxModel.Location = new Point(74, 3);
-            textBoxModel.Name = "textBoxModel";
-            textBoxModel.Size = new Size(244, 31);
-            textBoxModel.TabIndex = 6;
+            textBoxName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxName.Location = new Point(74, 3);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(244, 31);
+            textBoxName.TabIndex = 6;
             // 
             // labelMake
             // 
@@ -164,7 +165,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(494, 229);
             listBox1.TabIndex = 5;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // tableLayoutPanel2
             // 
@@ -236,13 +236,13 @@
             button7.TextAlign = ContentAlignment.MiddleLeft;
             button7.UseVisualStyleBackColor = true;
             // 
-            // ListUsers
+            // UC_ListUsers
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(label1);
-            Name = "ListUsers";
+            Name = "UC_ListUsers";
             Size = new Size(714, 667);
             tableLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -268,9 +268,9 @@
         private ListBox listBox1;
         public TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
-        private TextBox textBoxYear;
+        private TextBox textBoxEmail;
         private Label labelModel;
         private Label labelMake;
-        private TextBox textBoxModel;
+        private TextBox textBoxName;
     }
 }

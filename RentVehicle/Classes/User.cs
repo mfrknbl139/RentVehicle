@@ -25,13 +25,9 @@ namespace RentVehicle.Classes
             Email = email;
             // Initialize other properties if necessary
         }
-
-        // Method to display details of the user
-        
-
-        
-
+        public override string ToString()
+        {
+            return $"{Name} ({Email})";
+        }
     }
-
-
 }

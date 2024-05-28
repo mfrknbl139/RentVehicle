@@ -7,18 +7,12 @@ namespace RentVehicle.Classes
     public class VehicleManager
     {
         private List<Vehicle> vehicles;
-
-        public VehicleManager()
-        {
-            vehicles = new List<Vehicle>();
-        }
-
+        public VehicleManager(){vehicles = new List<Vehicle>();}
         public void AddVehicle(Vehicle vehicle)
         {
             vehicles.Add(vehicle);
             Console.WriteLine("Vehicle added successfully.");
         }
-
         public void UpdateVehicle(int vehicleId, string make, string model, int year, decimal? rentalPricePerDay)
         {
             Vehicle vehicleToUpdate = vehicles.FirstOrDefault(v => v.Id == vehicleId);
@@ -87,11 +81,9 @@ namespace RentVehicle.Classes
             }
             return 0; // Return 0 if rental cost cannot be calculated
         }
-
-        // Method to get the list of all vehicles
         public List<Vehicle> GetVehicles()
         {
             return vehicles;
-        }
+        }   //List Vehicles
     }
 }

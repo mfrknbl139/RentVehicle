@@ -55,7 +55,6 @@
             labelRentalPrice.Size = new Size(65, 50);
             labelRentalPrice.TabIndex = 12;
             labelRentalPrice.Text = "Rental Price:";
-            labelRentalPrice.Click += labelRentalPrice_Click;
             // 
             // labelYear
             // 
@@ -80,10 +79,9 @@
             labelMake.AutoSize = true;
             labelMake.Location = new Point(3, 0);
             labelMake.Name = "labelMake";
-            labelMake.Size = new Size(59, 25);
+            labelMake.Size = new Size(98, 25);
             labelMake.TabIndex = 9;
             labelMake.Text = "UserName:";
-            labelMake.Click += labelMake_Click;
             // 
             // textBoxRentalPrice
             // 
@@ -205,7 +203,6 @@
             label2.Size = new Size(135, 25);
             label2.TabIndex = 13;
             label2.Text = "Manage Vehicle";
-            label2.Click += label2_Click;
             // 
             // panel1
             // 
@@ -220,7 +217,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(707, 667);
             panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
             // 
             // tableLayoutPanel2
             // 
@@ -270,7 +266,6 @@
             VehicleType.Size = new Size(201, 33);
             VehicleType.TabIndex = 15;
             VehicleType.ValueMember = "Type";
-            VehicleType.SelectedIndexChanged += VehicleType_SelectedIndexChanged;
             // 
             // vehicleBindingSource
             // 
@@ -280,12 +275,12 @@
             // 
             bikeBindingSource.DataSource = typeof(Classes.Bike);
             // 
-            // ManageVehicle
+            // UC_ManageVehicle
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
-            Name = "ManageVehicle";
+            Name = "UC_ManageVehicle";
             Size = new Size(714, 667);
             tableLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);

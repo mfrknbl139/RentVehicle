@@ -19,8 +19,6 @@ namespace RentVehicle.Classes
             //   Console.WriteLine($"User ID: {UserId}, Name: {Name}, Email: {Email}");
             // Display other user details if necessary
         }
-
-
         public void AddUser(User user)
         {
             users.Add(user);
@@ -38,5 +36,6 @@ namespace RentVehicle.Classes
 
             }
         }
+        public List<User> GetUsers() { return users; }
     }
 }

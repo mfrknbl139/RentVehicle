@@ -28,7 +28,6 @@ namespace RentVehicle.UserControllers
             // ComboBox'a veri kaynağını ata
             VehicleType.DataSource = vehicleTypes;
         }
-
         private void LoadVehicles()
         {
             listBox1.Items.Clear();
@@ -37,7 +36,6 @@ namespace RentVehicle.UserControllers
                 listBox1.Items.Add(vehicle);
             }
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             var selectedVehicle = listBox1.SelectedItem as Vehicle;
@@ -50,7 +48,6 @@ namespace RentVehicle.UserControllers
                 textBoxRentalPrice.Text = selectedVehicle.RentalPricePerDay.ToString();
             }
         }
-
         private void AddVehicleButton_Click(object? sender, EventArgs e)
         {
             var make = textBoxMake.Text;
@@ -68,8 +65,6 @@ namespace RentVehicle.UserControllers
             MessageBox.Show("Vehicle added!");
 
         }
-
-
         private void UpdateVehicleButton_Click(object? sender, EventArgs e)
         {
             var make = textBoxMake.Text;
@@ -89,40 +84,9 @@ namespace RentVehicle.UserControllers
             LoadVehicles();
             MessageBox.Show("Vehicle removed!");
         }
-
         private void ExitConsoleButton_Click(object? sender, EventArgs e)
         {
             //Application.Exit();
-        }
-
-        private void labelRentalPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelMake_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VehicleType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
         private void Form_Load(object sender, EventArgs e)
         {
