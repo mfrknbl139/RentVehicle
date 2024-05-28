@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace RentVehicle.UserControllers
 {
-    public partial class RentSpecificVehicle : UserControl
+    public partial class UC_RentSpecificVehicle : UserControl
     {
         private VehicleManager vehicleManager;
         private int selectedVehicleId;   
-        public RentSpecificVehicle(VehicleManager manager)
+        public UC_RentSpecificVehicle(VehicleManager manager)
         {
             InitializeComponent();
             vehicleManager = manager;
@@ -25,7 +25,7 @@ namespace RentVehicle.UserControllers
             listBox1.Items.Clear();
             foreach (var vehicle in vehicleManager.GetVehicles())
             {
-                listBox1.Items.Add(vehicle.Make + " " + vehicle.Model);
+                listBox1.Items.Add(vehicle.UserName + " " + vehicle.Model);
             }
         }
 
@@ -72,7 +72,7 @@ namespace RentVehicle.UserControllers
             listBox1.Items.Clear();
             foreach (var vehicle in vehicleManager.GetVehicles())
             {
-                listBox1.Items.Add(vehicle.Make + " " + vehicle.Model);
+                listBox1.Items.Add(vehicle.UserName + " " + vehicle.Model);
             }
         }
 

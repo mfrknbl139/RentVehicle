@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace RentVehicle.Forms
 {
-    public class NavigationControl
+    public class F_NavigationControl
     {
         List<UserControl> userControlList = new List<UserControl>();
         Panel panel;
 
-        public NavigationControl(List<UserControl> userControlList, Panel panel)
+        public F_NavigationControl(List<UserControl> userControlList, Panel panel)
         {
             this.userControlList = userControlList;
             this.panel = panel;

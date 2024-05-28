@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace RentVehicle.Forms
 {
-    public class NavigationButtons
+    public class F_NavigationButtons
     {
         List<Button> buttons;
         Color defaultColor;
         Color selectedColor;
 
-        public NavigationButtons(List<Button> buttons, Color defaultColor, Color selectedColor)
+        public F_NavigationButtons(List<Button> buttons, Color defaultColor, Color selectedColor)
         {
             this.buttons = buttons;
             this.defaultColor = defaultColor;

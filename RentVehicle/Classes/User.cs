@@ -27,10 +27,11 @@ namespace RentVehicle.Classes
         }
 
         // Method to display details of the user
-        public void DisplayDetails()
-        {
-            Console.WriteLine($"User ID: {UserId}, Name: {Name}, Email: {Email}");
-            // Display other user details if necessary
-        }
+        
+
+        
+
     }
+
+
 }

@@ -1,6 +1,6 @@
 ﻿namespace RentVehicle.UserControllers
 {
-    partial class RentSpecificVehicle
+    partial class UC_RentSpecificVehicle
     {
         /// <summary> 
         /// Required designer variable.
@@ -42,7 +42,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(172, 15);
             label1.Name = "label1";
-            label1.Size = new Size(109, 15);
+            label1.Size = new Size(161, 25);
             label1.TabIndex = 0;
             label1.Text = "RentSpecificVehicle";
             label1.Click += label1_Click;
@@ -55,21 +55,22 @@
             panel1.Controls.Add(tableLayoutPanel1);
             panel1.Location = new Point(3, 51);
             panel1.Name = "panel1";
-            panel1.Size = new Size(494, 346);
+            panel1.Size = new Size(708, 613);
             panel1.TabIndex = 1;
             // 
             // listBox1
             // 
             listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
+            listBox1.ItemHeight = 25;
             listBox1.Location = new Point(136, 14);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(219, 154);
+            listBox1.Size = new Size(433, 404);
             listBox1.TabIndex = 5;
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(button2, 0, 1);
@@ -85,14 +86,15 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Size = new Size(115, 154);
+            tableLayoutPanel1.Size = new Size(115, 328);
             tableLayoutPanel1.TabIndex = 4;
             // 
             // button2
             // 
-            button2.Location = new Point(3, 33);
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.Location = new Point(3, 68);
             button2.Name = "button2";
-            button2.Size = new Size(109, 24);
+            button2.Size = new Size(109, 59);
             button2.TabIndex = 1;
             button2.Text = "Book Vehicle";
             button2.TextAlign = ContentAlignment.MiddleLeft;
@@ -100,9 +102,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(3, 63);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button3.Location = new Point(3, 133);
             button3.Name = "button3";
-            button3.Size = new Size(109, 24);
+            button3.Size = new Size(109, 59);
             button3.TabIndex = 2;
             button3.Text = "Calculate Cost";
             button3.TextAlign = ContentAlignment.MiddleLeft;
@@ -110,9 +113,10 @@
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button4.Location = new Point(3, 3);
             button4.Name = "button4";
-            button4.Size = new Size(109, 24);
+            button4.Size = new Size(109, 59);
             button4.TabIndex = 3;
             button4.Text = "List Vehicle";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -120,9 +124,10 @@
             // 
             // button5
             // 
-            button5.Location = new Point(3, 123);
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button5.Location = new Point(3, 263);
             button5.Name = "button5";
-            button5.Size = new Size(109, 28);
+            button5.Size = new Size(109, 62);
             button5.TabIndex = 4;
             button5.Text = "Main Menu";
             button5.TextAlign = ContentAlignment.MiddleLeft;
@@ -130,9 +135,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(3, 93);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.Location = new Point(3, 198);
             button1.Name = "button1";
-            button1.Size = new Size(109, 24);
+            button1.Size = new Size(109, 59);
             button1.TabIndex = 0;
             button1.Text = "Check Availability";
             button1.TextAlign = ContentAlignment.MiddleLeft;
@@ -144,7 +150,7 @@
             Controls.Add(panel1);
             Controls.Add(label1);
             Name = "RentSpecificVehicle";
-            Size = new Size(500, 400);
+            Size = new Size(714, 667);
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);

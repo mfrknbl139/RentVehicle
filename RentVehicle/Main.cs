@@ -10,8 +10,8 @@ namespace RentVehicle
 {
     public partial class Main : Form
     {
-        NavigationControl navigationControl;
-        NavigationButtons navigationButtons;
+        F_NavigationControl navigationControl;
+        F_NavigationButtons navigationButtons;
 
         Color btnDefaultColor = Color.FromKnownColor(KnownColor.ControlLight);
         Color btnSelectedColor = Color.FromKnownColor(KnownColor.ControlDark);
@@ -33,8 +33,8 @@ namespace RentVehicle
             button4.Click += Button4_Click;
             button5.Click += Button5_Click;
 
-            var manageVehicleControl = new ManageVehicle(vehicleManager);
-            var rentSpecificVehicleControl = new RentSpecificVehicle(vehicleManager);
+            var manageVehicleControl = new UC_ManageVehicle(vehicleManager);
+            var rentSpecificVehicleControl = new UC_RentSpecificVehicle(vehicleManager);
 
             this.Controls.Add(manageVehicleControl);
             this.Controls.Add(rentSpecificVehicleControl);
@@ -44,10 +44,10 @@ namespace RentVehicle
         {
             List<UserControl> userControls = new List<UserControl>()
             {
-                new ManageVehicle(vehicleManager), new RentSpecificVehicle(vehicleManager), new ListUsers()
+                new UC_ManageVehicle(vehicleManager), new UC_RentSpecificVehicle(vehicleManager), new UC_ListUsers()
             };
 
-            navigationControl = new NavigationControl(userControls, panel3);
+            navigationControl = new F_NavigationControl(userControls, panel3);
             navigationControl.Display(3);
         }
 
@@ -56,7 +56,7 @@ namespace RentVehicle
             List<Button> buttons = new List<Button>()
             { button1, button2 , button3 , button4 ,button5 };
 
-            navigationButtons = new NavigationButtons(buttons, btnDefaultColor, btnSelectedColor);
+            navigationButtons = new F_NavigationButtons(buttons, btnDefaultColor, btnSelectedColor);
             navigationButtons.Highlight(button1);
         }
 

@@ -7,12 +7,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RentVehicle.UserControllers
 {
-    public partial class ManageVehicle : UserControl
+    public partial class UC_ManageVehicle : UserControl
     {
         private VehicleManager vehicleManager;
         private int selectedVehicleId;
 
-        public ManageVehicle(VehicleManager vehicleManager)
+        public UC_ManageVehicle(VehicleManager vehicleManager)
         {
             InitializeComponent();
             this.vehicleManager = vehicleManager;
@@ -44,7 +44,7 @@ namespace RentVehicle.UserControllers
             if (selectedVehicle != null)
             {
                 selectedVehicleId = selectedVehicle.Id;
-                textBoxMake.Text = selectedVehicle.Make;
+                textBoxMake.Text = selectedVehicle.UserName;
                 textBoxModel.Text = selectedVehicle.Model;
                 textBoxYear.Text = selectedVehicle.Year.ToString();
                 textBoxRentalPrice.Text = selectedVehicle.RentalPricePerDay.ToString();

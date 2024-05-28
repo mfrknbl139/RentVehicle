@@ -16,10 +16,8 @@ namespace RentVehicle.Classes
         public int Year { get; set; }
         public decimal RentalPricePerDay { get; set; }
         public bool IsAvailable { get; set; }
-
         // Static counter for assigning unique IDs to vehicles
         private static int nextId = 1;
-
         // Constructor
         protected VehicleBase(string make, string model, int year, decimal rentalPricePerDay)
         {
@@ -30,10 +28,8 @@ namespace RentVehicle.Classes
             RentalPricePerDay = rentalPricePerDay;
             IsAvailable = true; // By default, vehicle is available
         }
-
         // Abstract method to display details of the vehicle
         public abstract void DisplayDetails();
-
         // Abstract method to calculate rental cost
         public abstract decimal CalculateRentalCost(int numberOfDays);
     }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RentVehicle.UserControllers
 {
-    public partial class ListUsers : UserControl
+    public partial class UC_ListUsers : UserControl
     {
-        public ListUsers()
+        public UC_ListUsers()
         {
             InitializeComponent();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

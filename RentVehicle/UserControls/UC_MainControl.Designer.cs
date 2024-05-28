@@ -2,7 +2,7 @@
 
 namespace RentVehicle.UserControls
 {
-    partial class MainControl
+    partial class UC_MainControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace RentVehicle.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_MainControl));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();

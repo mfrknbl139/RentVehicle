@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RentVehicle.UserControls
 {
-    public partial class MainControl : UserControl
+    public partial class UC_MainControl : UserControl
     {
-        public MainControl()
+        public UC_MainControl()
         {
             InitializeComponent();
         }
